@@ -14,17 +14,23 @@ for (value of board) {
   }
 }
 
+board.map((array) => {
+  console.log("array :>> ", array);
+  return array.map((item) => console.log("item :>> ", item));
+});
+
 // #### 2. Doggo
 // * 2.1 Create a doggo object. Add name and breed as properties of the object.
 // * 2.2 Create an array within the doggo object named favorite foods and add the doggo's favorite foods to the array.
 // * 2.3 Access the second element of the doggo's favorite foods.
 // * 2.4 Add a method that loops through and print all the doggo's favorite food.
+
 const doggo = {
   name: "Ray",
   breed: "boxer",
   favorite_foods: ["sushi", "kebab"],
   myMethod: function print() {
-    return this.favorite_foods;
+    this.favorite_foods.map((food) => console.log("food==>", food));
   },
 };
 
