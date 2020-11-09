@@ -34,7 +34,7 @@ console.log("items ==> ", items);
  const doggo = {
      name: "Sansa",
      breed: "Rottweiler",
-     favoriteFood: ["steak", "beef", "chickenfilet","humans dinner"]
+     favoriteFood: ["steak", "beef", "chickenfilet","humans dinner"],
      favFood() {
         this.favoriteFood.map((food) => console.log("FavFood==>",food));
         }
