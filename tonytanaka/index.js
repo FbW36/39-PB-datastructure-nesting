@@ -39,8 +39,12 @@ false
 const doggo = {
     name: "Kelly",
     breed: "Lhasa Apso",
-    favoriteFoods: ["fruits", "chicken", "sausage"]
+    favoriteFoods: ["fruits", "chicken", "sausage"],
+    favFood() {
+        this.favoriteFoods.map((food) => console.log("FavFoods ==>", food));
+    }
 }
+console.log(doggo.favFood())
 
 // 2.3 Access the second element of the doggo's favorite foods. 
 for (let key in doggo) {
