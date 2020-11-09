@@ -23,6 +23,7 @@ const doggo = {
 };
 //2.3
 let secondElement = doggo.favoriteFoods[1];
+doggo.printFood();
 
 //3
 //3.2
@@ -44,3 +45,5 @@ const recipes = {
 recipes.ingredients.ginger = "ginger";
 //3.4
 recipes.ingredients.sugar = "brown sugar";
+
+recipes.printIngredient();
