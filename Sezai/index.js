@@ -35,7 +35,11 @@ console.log("items ==> ", items);
      name: "Sansa",
      breed: "Rottweiler",
      favoriteFood: ["steak", "beef", "chickenfilet","humans dinner"]
+     favFood() {
+        this.favoriteFood.map((food) => console.log("FavFood==>",food));
+        }
     }
+    doggo.favFood()
     
     //2.3
     console.log("2nd element of favorite food ==> ", doggo.favoriteFood[1]);
