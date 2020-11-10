@@ -29,7 +29,7 @@ const doggo = {
   name: "Ray",
   breed: "boxer",
   favorite_foods: ["sushi", "kebab"],
-  myMethod: function print() {
+  myMethod: function () {
     this.favorite_foods.map((food) => console.log("food==>", food));
   },
 };
