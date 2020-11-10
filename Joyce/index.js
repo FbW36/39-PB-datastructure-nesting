@@ -47,21 +47,24 @@ getFoods(doggoObject);
 
 const recipes = {
   ingredients: {
-    butter: "butter",
-    sugar: "sugar",
-    flour: "flour",
-    getIngredient() {
-      for (let item in this.ingredients) {
-        console.log(this.ingredients[item]);
-      }
-    },
+    butter: "250gm",
+    sugar: "150gm",
+    flour: "two cups",
+  },
+  getIngredients() {
+    for (let item in this.ingredients) {
+      console.log(this.ingredients[item]);
+    }
   },
 };
 // 3.3 Without changing the previous code, add another ingredient - let's add ginger.
-recipes.ingredients.ginger = "ginger";
+recipes.ingredients.ginger = "one teaspoon";
 
 // 3.4 Change the ingredient sugar to brown sugar.
-recipes.ingredients.sugar = "brown sugar";
+
+delete recipes.ingredients.sugar;
+recipes.ingredients.brownSugar = "150gm";
 
 // 3.5 Write a method in the recipes object that prints the value of each ingredient in the ingredients object.
-recipes.getIngredient();
+console.log(recipes);
+recipes.getIngredients();
