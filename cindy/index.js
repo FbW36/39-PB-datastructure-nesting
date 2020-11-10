@@ -21,10 +21,14 @@ const doggo ={
   name: "lilo",
   breed: "akita",
   favoriteFood: ['orange','chicken'],
-  secondFood: function print(){
-    this.favoriteFoods.map((food) => console.log("food==>",food[2]));
+  secondFood: function(){
+    this.favoriteFood.map((food) => console.log("values==>",food));
   }
 }
+doggo.secondFood()
+//2-3 
+let second = doggo.favoriteFood[1]
+console.log("second ==>",second);
 // 3.
 //     3.1 Create an object called recipes.
 //     3.2 Inside this object, you should create another object for ingredients and store           ingredients as properties butter, sugar, flour etc. Each property should have a string as its value.
@@ -32,14 +36,20 @@ const doggo ={
 //     3.4 Change the ingredient sugar to brown sugar.
 //     3.5 Write a method in the recipes object that prints the value of each ingredient in the ingredients object.
 const recipes = {
-  ingredients: {
-    prop1: 'butter',
-    prop2: 'sugar',
-    prop3: 'flour',
-    prop4: 'milk',
-    prop5: 'eggs',
-  }
-};
-recipes.ingredients.prop6 = 'Ginger'
-recipes.ingredients.prop2 = 'brown sugar'
-console.log(recipes)
+	ingredients: {
+		butter: '100 gr',
+		sugar: '100gr',
+		flour: '200 gr'
+	},
+	printIngedients() {
+		for (let ingredient in this.ingredients) {
+			console.log(this.ingredients[ingredient]);
+		}
+	}
+}
+recipes.ingredients.ginger = 'ginger';
+
+recipes.ingredients.sugar = 'brown sugar';
+
+console.log(recipes);
+recipes.printIngedients();
