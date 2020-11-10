@@ -42,8 +42,14 @@ const recipes = {
         flour: "1 kg",
         sugar: "1.5 kg",
         salt: "500 gram"
+
+    },
+    printValues() {
+        return Object.values(this.ingredients)
     }
 }
+console.log("recipes ==>", recipes.printValues());
+
 
 recipes.ingredients.ginger = " 100 gram"
 recipes.ingredients.sugar = "brown sugar"
