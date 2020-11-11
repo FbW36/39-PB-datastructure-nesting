@@ -22,6 +22,8 @@ const doggo = {
   favoriteFoods: ["salmon", "avocado", "egg"],
 };
 
+console.log(doggo[Object.keys(doggo)[1]]);
+
 for (value of doggo.favoriteFoods) {
   console.log(value);
 }
